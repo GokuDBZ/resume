@@ -1,6 +1,7 @@
 
 //particlesJS.load('particles-js', particleData);
-
+// load particles
+console.log("Loading particles");
 particlesJS("particles-js", {
     particles: {
       number: { value: 120, density: { enable: true, value_area: 700 } },
@@ -56,3 +57,11 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
+
+  console.log("loading typed")
+  var options = {
+    strings: ['Suraj Yadav'],
+    typeSpeed: 40,
+    loop: true
+  };
+  var typed = new Typed('.typed-js', options);
