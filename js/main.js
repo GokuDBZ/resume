@@ -4,10 +4,10 @@
 console.log("Loading particles");
 particlesJS("particles-js", {
     particles: {
-      number: { value: 70, density: { enable: true, value_area: 300 } },
-      color: { value: "#0d00f2" },
+      number: { value: 60, density: { enable: true, value_area: 300 } },
+      color: { value: "#ff99cc" },
       shape: {
-        type: "star",
+        type: "circle",
         stroke: { width: 0, color: "#000000" },
         polygon: { nb_sides: 5 },
         image: { src: "img/github.svg", width: 80, height: 90 }
@@ -24,8 +24,8 @@ particlesJS("particles-js", {
       },
       line_linked: {
         enable: true,
-        distance: 150,
-        color: "#363945",
+        distance: 120,
+        color: "#33ccff",
         opacity: 0.4,
         width: 1
       },
