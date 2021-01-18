@@ -82,13 +82,13 @@
     loadParticles();
     loadTyped();
 
-    // $(".down-angle").on('click', function(){
-    //   $("#qd").css("display", "flex")
+    $(".down-angle").on('click', function(){
+      $("#qd").css("transition", "1s","ease", "1s");
+      $("#qd").css("display", "flex")
+    })
 
-    // })
-
-    // $(".up-angle").on('click', function(){
-    //   $("#qd").hide();
-    // })
+    $(".up-angle").on('click', function(){
+      $("#qd").hide();
+    })
 
   }())
