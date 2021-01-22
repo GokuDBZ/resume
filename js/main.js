@@ -79,16 +79,25 @@
       }
     }
 
+    function slider(){
+      console.log("starting slider")
+      const paths = ["https://iamsuraj.s3.ap-south-1.amazonaws.com/gravatar.jpeg", "https://iamsuraj.s3.ap-south-1.amazonaws.com/photo_2021-01-22+12.18.31.jpeg", "https://iamsuraj.s3.ap-south-1.amazonaws.com/photo_2021-01-22+12.14.49.jpeg"]
+      var index = 0;
+      var interval = setInterval(function(){
+        if(index == paths.length){ index = 0 }
+        console.log(index);
+        //document.getElementsByClassName("srj-image").src = paths[index];
+        $(".srj-image").attr('src',  paths[index])
+      
+        console.log("changed path")
+        index = index + 1
+        
+      }, 1500)
+    }
+
     loadParticles();
     loadTyped();
+    //slider();
 
-    // $(".down-angle").on('click', function(){
-    //   $("#qd").css("transition", "1s","ease", "1s");
-    //   $("#qd").css("display", "flex")
-    // })
-
-    // $(".up-angle").on('click', function(){
-    //   $("#qd").hide();
-    // })
 
   }())
