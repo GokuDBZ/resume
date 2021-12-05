@@ -67,7 +67,7 @@
     function loadTyped(){
       try{
         var options = {
-          strings: ['Suraj Yadav'],
+          strings: ['Hello, I am Suraj Yadav', 'and I am a Full Stack Developer'],
           typeSpeed: 40,
           loop: true
         };
